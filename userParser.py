@@ -9,9 +9,7 @@ class UserParser:
         pass
 
     def parseFile(self, filename):
-        user = User()
-        print "userParser called"
-        return user
+        pass
 
     def parseDir(self, pathname):
         pass
