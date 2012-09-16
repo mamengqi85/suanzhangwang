@@ -1,0 +1,10 @@
+input_coding=utf-8
+output_coding=utf-8
+dateform=%Y%m%d
+
+true=true,1,T,TRUE,True
+amount=amount,金额,数额
+payer=payer,付账人
+memo=meomo,备注,备忘
+date=date,日期,时间
+payed=payed,ispayed,isPayed,已付

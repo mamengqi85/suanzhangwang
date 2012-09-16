@@ -5,9 +5,6 @@ class UserParser:
         if self.__class__ is UserParser:
             raise NotImplementedError("abstract")
 
-    def parse(self, entry):
-        pass
-
     def parseFile(self, filename):
         pass
 

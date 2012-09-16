@@ -1,7 +1,8 @@
-from user import User
-from userParser import UserParser
 import codecs
 import os
+
+from user import User
+from user_parser import UserParser
 
 class UserParserTxt(UserParser):
 
