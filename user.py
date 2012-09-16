@@ -1,3 +1,5 @@
+import helper
+
 class User:
 
     _uid = ""
@@ -18,7 +20,7 @@ class User:
 
     def toString(self):
         groupStr = "][".join(self._group)
-        return "User Name: {}\nNick Name: {}\nEmail: {}\n[{}]".format(self._user_name.encode("utf-8"), self._nick_name.encode("utf-8"), self._email, groupStr)
+        return "User Name: {}\nNick Name: {}\nEmail: {}\n[{}]".format(self._user_name.encode(helper.helper.OUTCODING), self._nick_name.encode("utf-8"), self._email, groupStr)
 
 if __name__ == "__main__":
     user = User("123", "testName", "test", "pw", "abe@gmail.com", {"apt1411", "Cornell"})
