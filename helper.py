@@ -40,7 +40,9 @@ class Helper:
         return res
 
     def checkWords(self, var, val):
-        if var in self._word_set:
+        if var not in self._word_set:
+            return False
+        if val in self._word_set[var]:
             return True
         if var == "true" and val == 1:
             return True

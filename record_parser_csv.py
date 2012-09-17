@@ -81,7 +81,7 @@ class RecordParserCsv(RecordParser):
         return record_lst
 
 if __name__ == "__main__":
-    from userParserTxt import UserParserTxt
+    from user_parser_txt import UserParserTxt
     upt = UserParserTxt()
     usr_lst = upt.parseDir("users")
     for usr in usr_lst:
