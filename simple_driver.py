@@ -7,6 +7,7 @@ from user import User
 from user_parser_txt import UserParserTxt
 import helper
 
+from check import Check
 from datetime import datetime
 import codecs
 import os
@@ -66,9 +67,14 @@ class SimpleDriver(Driver):
         for usr in self._report:
             output.append("user:" + usr._user_name)
             for other in self._report[usr]:
-                output.append(other._nick_name + str(self._report[usr][other]))
+                output.append(other._nick_name + str(round(self._report[usr][other],2)))
             output.append("")
         return "\n".join(output)
+
+    def suggestChecks(self):
+        for user in self._user_lst:
+            pass
+
 
 if __name__ == "__main__":
     driver = SimpleDriver()

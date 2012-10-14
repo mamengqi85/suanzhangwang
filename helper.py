@@ -60,7 +60,10 @@ class Helper:
                 self.OUTCODING = val
             elif var == 2:
                 self.DATE_FORM = val
-            elif var == 3:
+        inf = codecs.open(path, "r", self.INCODING)
+        for line in inf:
+            (var, val) = self._parseLine(line)
+            if var == 3:
                 self._word_set["true"] = val.split(",")
             elif var == 4:
                 self._word_set["amount"] = val.split(",")
